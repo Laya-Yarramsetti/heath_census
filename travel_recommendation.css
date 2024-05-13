@@ -6,35 +6,85 @@
 
 /* Style the header and navigation */
 header {
-    background-color: #333;
+    background-color: grey;
     padding: 10px 0;
+    justify-content: space-between; /* Align items in the center */
+    align-items: left;
+    display: flex;
 }
 
-nav ul {
+h1{
+    margin-left: 3px;
+}
+
+nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: #ccc;
 }
 
 /* Add background image */
 body {
     background-image: url('amalfi.jpg'); /* Add the path to your background image */
-    background-size: cover; /* Cover the entire viewport */
+    background-size: 250%; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Style the search bar */
+.search-container {
+    transform: translateX(18%);
+    position: relative;
+    margin-bottom: 10px;
+    width: 580px;
+}
+
+input[type="text"] {
+    padding: 8px 10px;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.search-container button {
+    transform: translateX(-250%);
+    padding: 5px 10px;
+    background-color: rgb(194, 181, 149);
+    color: #fff;
+    border: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #666;
+}
+
+.home {
+    margin-right: 50px;
+}
+
+.about-us{
+    margin-right: 50px;
+}
+
+.contact{
+    margin-right: 80px;
 }
