@@ -9,22 +9,37 @@
 </head>
 
 <body>
-<div>
     <header>
         <h1>TravelSenpai</h1>
-        <!-- Add navigation links, logo, or any other header content here -->
-        <nav>
-                <a class="home">Home</a>
-                <a class="about-us">About Us</a>
-                <a class="contact"">Contact</a>
-                <div class="search-container">
-                    <input type="text" name="search" id="search" placeholder="Enter your destination or keyword">
-                    <button type="submit">Search</button>
-                    <button type="reset">Reset</button>
-                </div>
-        </nav>
+    <nav> 
+        <a href="#" onclick="LoadHomeContent()">Home</a>
+        <a class="about" onclick="LoadAboutContent()" >About Us</a>
+        <a class="contact" onclick="LoadContactContent()">Contact Us</a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations or keywords">
+            <button type="submit">Search</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </nav>
     </header>
-</div>
+
+    <div class = "wholepage">
+        <div class="content" id="the-content">
+            <div class="headline">Explore New Destinations</div>
+            <div class="social-media-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="description">Discover the rich cultures and hidden gems around the world. Start your journey with us and explore like never before.</div>
+            </div>
+        <div>
+            <button class="book-now-button">Book Now</button>
+        </div>
+    </div>
+    <script src= "./travel_recommendation.js" </script>
 </body>
 
 </html>
